@@ -233,23 +233,18 @@ body.scrolled header {
   font-size: 48px;
   line-height: 48px;
   font-family: var(--font-main-2);
-  color: transparent;
+  color: #576280;
 }
 
 .project-hover-container .sub-title {
   font-size: 20px;
   font-family: var(--font-main-1);
-  color: transparent;
+  color: #576280;
   margin-top: 12px;
 }
 
 .project-hover-container:hover {
-  background-color: #576280
-}
-
-.project-hover-container:hover > .title,
-.project-hover-container:hover > .sub-title {
-  color: white;
+  border: 3px solid #343B4D;
 }
 
 @media (max-width: 768px) {
