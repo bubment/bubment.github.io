@@ -157,7 +157,7 @@ body.scrolled header {
 .hero-title-container .main-title {
     color: var(--navy-blue);
     font-size: 80px;
-    line-height: 80px;
+    line-height: 104px;
     font-family: var(--font-main-2);
     font-weight: bold;
 }
@@ -447,12 +447,12 @@ section.design-system-work-bg {
 
 section.branding-bg {
   background: url('../images/branding/hero_shape.png');
-  background-size: 30%;
+  background-size: 40%;
 }
 
 section.passion-project-bg {
   background: url('../images/passion_projects/hero_shape.png');
-  background-size: 40%;
+  background-size: 30%;
 }
 
 section.subpage-bg {
@@ -570,4 +570,5 @@ section.subpage-bg {
 
 .final-outcome-branding-row div img {
   border-radius: 20px;
+  margin-bottom: 10px;
 }

@@ -41,8 +41,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
       const target = document.querySelector(this.getAttribute('href'));
 
+      const scrollPositionAdjustment = 30;
+
       window.scrollTo({
-          top: target.offsetTop,
+          top: (target.offsetTop - scrollPositionAdjustment),
           behavior: 'smooth'
       });
   });
