@@ -445,6 +445,16 @@ section.design-system-work-bg {
   background-size: 30%;
 }
 
+section.branding-bg {
+  background: url('../images/branding/hero_shape.png');
+  background-size: 30%;
+}
+
+section.passion-project-bg {
+  background: url('../images/passion_projects/hero_shape.png');
+  background-size: 40%;
+}
+
 section.subpage-bg {
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -546,4 +556,18 @@ section.subpage-bg {
 
 .dsw-final-outcome-2-margin {
   margin-bottom: 80px;
+}
+
+/* Branding */
+
+.margin-bottom-80 {
+  margin-bottom: 80px;
+}
+
+.final-outcome-branding-row {
+  margin-bottom: 40px;
+}
+
+.final-outcome-branding-row div img {
+  border-radius: 20px;
 }
