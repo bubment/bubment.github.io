@@ -146,6 +146,7 @@ body.scrolled header {
 @media (max-width: 426px) {
   .navigation-link {
     font-size: 14px;
+    flex-direction: column;
   }
 
   .navigation-link img {
@@ -185,16 +186,15 @@ body.scrolled header {
   }
 
   .hero-container {
-    margin-top: 75px;
+    margin-top: 140px;
 }
 }
 
 @media (max-width: 426px) {
   .hero-title-container .main-title {
-    line-height: 70px;
     margin-top: 20px;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 48px;
+    line-height: 54px;
   }
 
   .hero-title-container {
@@ -392,7 +392,7 @@ footer {
 
 /* Subpage hero */
 .subpage-hero-container {
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   padding: 75px 10%;
   display: flex;
@@ -424,6 +424,10 @@ footer {
 }
 
 @media (max-width: 426px) {
+  .subpage-hero-container {
+    height: 100vh;
+  }
+
   .subpage-hero-container .main-title {
     line-height: 72px;
   }
