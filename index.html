@@ -1,510 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- meta tags -->
-<meta charset="utf-8">
-<meta name="keywords" content="Bootstrap 5, Factory, Industrial, building, business, chemicals, multipurpose, RTL" />
-<meta name="description" content="Bootstrap 5 HTML5 Template" />
-<meta name="author" content="www.themeht.com" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/favicon.png" rel="icon" />
+<title>Szentléleki Gellért</title>
+<meta name="description" content="This is the portfolio site of Gellért Szentléleki. Photographer, Video maker">
+<meta name="keywords" content="Photo, Photograper, Film, Fiml maker, Video, Video maker, Sceen production, Writer">
+<meta name="author" content="Medgyesi Attila">
 
-<!-- Title -->
-<title>Falvágás - Betonvágás</title>
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<!-- favicon icon -->
-<link rel="shortcut icon" href="images/favicon.ico" />
-
-<!-- inject css start -->
-
-<!--== bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-<!--== animate -->
-<link href="css/animate.css" rel="stylesheet" type="text/css" />
-
-<!--== fontawesome -->
-<link href="css/fontawesome-all.css" rel="stylesheet" type="text/css" />
-
-<!--== themify-icons -->
-<link href="css/themify-icons.css" rel="stylesheet" type="text/css" />
-
-<!--== magnific-popup -->
-<link href="css/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-
-<!--== owl-carousel -->
-<link href="css/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-
-<!--== spacing -->
-<link href="css/spacing.css" rel="stylesheet" type="text/css" />
-
-<!--== base -->
-<link href="css/base.css" rel="stylesheet" type="text/css" />
-
-<!--== shortcodes -->
-<link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
-
-<!--== default-theme -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-
-<!--== responsive -->
-<link href="css/responsive.css" rel="stylesheet" type="text/css" />
-
-<!--== color-customizer -->
-<link href="css/theme-color/theme-orange.css" data-style="styles" rel="stylesheet">
-
-<!-- inject css end -->
-
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Youtube Video Background -->
+<link rel="stylesheet" type="text/css" href="vendor/jquery.mb.YTPlayer/css/jquery.mb.YTPlayer.min.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-offset="0">
 
-<!-- page wrapper start -->
-
-<div class="page-wrapper">
-
-<!-- preloader start -->
-
-<div id="ht-preloader">
-  <div class="loader clear-loader"><img src="images/loader.gif" alt=""></div>
+<!-- Preloader -->
+<div class="preloader preloader-dark">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
+<!-- Preloader End --> 
 
-<!-- preloader end -->
-
-
-<!--header start-->
-
-<header id="site-header" class="header header-4">
-  <div class="top-bar d-md-block d-none">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-md-8">
-          <div class="topbar-link">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="tel:+36707704192"> <i class="fas fa-phone-alt"></i>+36-70-770-4192</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="tel:+36706332325"> <i class="fas fa-phone-alt"></i>+36-70-633-2325</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="tel:+36704293633"> <i class="fas fa-phone-alt"></i>+36-70-429-3633</a>
-              </li>
-            </ul>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="mailto:falvagas@gmail.com"><i class="far fa-envelope-open"></i>falvagas@gmail.com</a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""> <i class="fas fa-clock"></i>H - P : 08:00 - 17:00</a>
-              </li>
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top-slide"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-transparent border-bottom-0">
+      <div class="container-fluid position-relative g-lg-4">
+        <div class="col-auto col-lg-2"> 
+          <!-- Logo --> 
+          <!-- <a class="logo" href="index.html" title="Simone"> <img src="images/logo-light.png" alt="Simone"/> </a>  -->
+          <!-- Logo End --> 
+        </div>
+        <div class="col col-lg-8 navbar-accordion">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+          <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link smooth-scroll active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" 	href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">What I Do</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#testimonial">Client</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 text-end">
-          <div class="social-icons social-hover top-social-list">
-            <ul class="list-inline">
-              <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="header-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand logo" href="index.html">
-              <img id="logo-img" class="img-fluid" src="images/logo-orange.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <!-- Left nav -->
-              <ul class="nav navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="#">Rólunk</a></li>
-                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Szolgáltatások</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Acélgerendás kiváltás, áthidalás</a></li>
-                    <li><a href="#">Betonfúrás</a></li>
-                    <li><a href="#">Betonvágás</a></li>
-                    <li><a href="#">Bontás</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="#">Munkáink</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Árkalkulátor</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">GYIK</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Kapcsolat</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!--header end-->
-
-
-<!--hero section start-->
-
-<section class="banner p-0 position-relative fullscreen-banner">
-  <div class="banner-slider owl-carousel no-pb" data-dots="false" data-nav="true">
-    <div class="item" data-bg-img="images/bg/02.jpg">
-      <div class="align-center p-0">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-md-12">
-              <div class="dark-bg p-sm-5 p-3">
-                <h5 class="text-white mb-3 letter-space-3 animated6">Garanciával</h5>
-                <h1 class="text-white mb-3 animated8">BETON <span>VÁGÁS</span></h1> 
-                <p class="lead text-white animated5 mb-3">Vizes gyémánttechnológiával, rövid határidővel
-                  <br>HÍVJON BIZALOMMAL</p> <a class="btn btn-theme btn-radius animated7" href="#">Rólunk</a>
-                <a class="btn btn-border btn-radius animated6" href="#">Kapcsolat</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--hero section end-->
-
-
-<!--body content start-->
-
-<div class="page-content">
-
-<!--about start-->
-
-<section>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12">
-        <div class="owl-carousel no-pb" data-items="1" data-dots="false" data-nav="true">
-          <div class="item">
-            <img class="img-fluid w-100" src="images/about/01.png" alt="">
-          </div>
-          <div class="item">
-            <img class="img-fluid w-100" src="images/about/02.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 mt-3 mt-lg-0">
-        <h2 class="title">Rólunk</h2>
-        <p class="lead text-black">Vállalkozásunk <b>2001. óta</b> foglalkozik betonvágással, falvágással és fúrással, 2005-ben pedig szakosodott rá. Azóta a folyamatos szakmai és <b>technikai fejlődés</b> mellett igyekszünk Partnereink teljes körű kiszolgálására e területen.</p>
-        <p>Fő eszménk, hogy <b>Ügyfeleink maximálisan elégedettek legyenek</b> velünk! Munkáinkat úgy végezzük, mintha azt saját magunknak tennénk.
-          Ezt a gondolkodást minden kivitelezésnél igyekszünk bizonyítani megrendelőink számára.</p> <a class="btn btn-sm btn-simple mt-2" href="#"><span>Tudj meg többet <i class="fas fa-long-arrow-alt-right ms-2"></i></span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--about end-->
-
-<!--subscribe start-->
-
-<section class="dark-bg py-5" data-bg-img="images/bg/02.jpg" data-overlay="8">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8 col-sm-12">
-        <h2 class="text-white">Ne keress másik falvágó partnert <span class="text-theme font-weight-bold"> Kozultálj velünk</span></h2>
-      </div>
-      <div class="col-md-4 col-sm-12 text-md-end mt-3 mt-md-0"> <a href="#" class="btn btn-theme"><span>Kapcsolat</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--subscribe end-->
-
-<!--service start-->
-
-<section class="text-center grey-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="section-title">
-          <h6>Szolgáltatások</h6>
-          <h2 class="title-2">Minden ami beton</h2>
-          <p class="mb-0">Más szolgáltató csak falat bont... Mi álmokat valósítunk meg</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel" data-items="4" data-md-items="2" data-sm-items="1" data-xs-items="1" data-margin="30">
-          <div class="item">
-            <div class="service-item">
-              <div class="service-images">
-                <img class="img-fluid" src="images/service/01.jpg" alt="">
-                <div class="service-icon"> 
-                  <i class="flaticon-industrial-robot"></i>
-                </div>
-              </div>
-              <div class="service-description">
-                <h4>Acélgerendás kiváltás, áthidalás</h4>
-                <p>Tehermentesítés, áthidalás esetén a szükséges acélgerendák, acélszerkezet beépítését és az ahhoz szükséges anyagok beszerzését és a helyszínre szállítását is vállaljuk...</p> <a href="#">Tudj meg többet <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="service-images">
-                <img class="img-fluid" src="images/service/01.jpg" alt="">
-                <div class="service-icon"> <i class="flaticon-industrial-robot"></i>
-                </div>
-              </div>
-              <div class="service-description">
-                <h4>Betonfúrás</h4>
-                <p>Betonfúrás, falfúrás, magfúrás. Gépészeti, légtechnikai és mintavételezési furatok, szellőzők készítése beton, vasalt beton, tégla, Ytong (stb.) falak, aljzatok és födémek esetében.</p> <a href="#">Tudj meg többet <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="service-images">
-                <img class="img-fluid" src="images/service/01.jpg" alt="">
-                <div class="service-icon"> <i class="flaticon-industrial-robot"></i>
-                </div>
-              </div>
-              <div class="service-description">
-                <h4>Betonvágás</h4>
-                <p>Falvágás, betonvágás, panelvágás. Vasalt beton, gázbeton, tégla, Ytong, homokkő, stb. falak vágása, bontása és átalakítása vizes gyémánttechnológiával rezgésmentesen, alacsony porszennyezéssel.</p> <a href="#">Tudj meg többet <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="service-images">
-                <img class="img-fluid" src="images/service/01.jpg" alt="">
-                <div class="service-icon"> <i class="flaticon-industrial-robot"></i>
-                </div>
-              </div>
-              <div class="service-description">
-                <h4>Bontás</h4>
-                <p>Felújítás előtt álló lakások, üzletek esetén sok esetben igény van a régi, elavult hideg-, melegburkolatok, villamos hálózatok, szerelvények, beépített szekrények és nyílászárók elbontására.</p> <a href="#">Tudj meg többet <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--service end-->
-
-
-<!--counter start-->
-
-<section class="theme-bg py-5 text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-sm-6">
-        <div class="counter style-4">
-          <span class="count-number" data-to="1198" data-speed="1000">1198</span>
-          <label>Elvégzett munka</label>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="counter style-4">
-          <span class="count-number" data-to="1198" data-speed="1000">1198</span>
-          <label>Elégedett Megrendelő</label>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="counter style-4 mt-3 mt-lg-0">
-          <span class="count-number" data-to="87" data-speed="1000">87</span>
-          <label>Partner</label>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="counter style-4 mt-3 mt-lg-0">
-          <span class="count-number" data-to="11" data-speed="1000">11</span>
-          <label>Szakember</label>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--counter end-->
-
-<!--client start-->
-
-<section class="text-center grey-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 col-sm-6">
-        <img class="img-fluid" src="images/client/logo-1.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-6 mt-5 mt-sm-0">
-        <img class="img-fluid" src="images/client/logo-2.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-6 mt-5 mt-md-0">
-        <img class="img-fluid" src="images/client/logo-3.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-6 mt-5 mt-md-0">
-        <img class="img-fluid" src="images/client/logo-4.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-6 mt-5 mt-md-0">
-        <img class="img-fluid" src="images/client/logo-5.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-6 mt-5 mt-md-0">
-        <img class="img-fluid" src="images/client/logo-6.png" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--client end-->
-
-</div>
-
-<!--body content end--> 
-
-
-<!--footer start-->
-
-<footer class="footer dark-bg position-relative" data-bg-img="images/bg/09.png" style="background-size: contain; background-repeat: no-repeat;">
-  <div class="footer-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="theme-bg">
-            <div class="row g-0">
-              <div class="col-md-4 mb-5 mb-md-0">
-                <div class="px-5 pb-5 text-center footer-media"> <i class="flaticon-paper-plane"></i>
-                  <span>Cím:</span>
-                  <p class="mb-0">2146 Mogyoród, József Attila u. 4.</p>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5 mb-md-0">
-                <div class="px-5 pb-5 text-center footer-media"> <i class="flaticon-phone-call"></i>
-                  <span>Telefon:</span>
-                  <a href="tel:+36706332325">+36-70-633-2325</a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="px-5 pb-5 text-center footer-media border-0"> <i class="flaticon-message"></i>
-                  <span>Email:</span>
-                  <a href="mailto:falvagas@gmail.com">falvagas@gmail.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="primary-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <h5><span class="text-theme">Rólunk</span></h5>
-          <p class="mb-3">Vállalkozásunk 2001. óta foglalkozik betonvágással, falvágással és fúrással, 2005-ben pedig szakosodott rá. Azóta a folyamatos szakmai és technikai fejlődés mellett igyekszünk Partnereink teljes körű kiszolgálására e területen.</p> <a class="btn-simple" href="#"><span>Tudj meg többet <i class="ms-2 fas fa-long-arrow-alt-right"></i></span></a>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 footer-list">
-          <h5><span class="text-theme">Szolgáltatásaink</span></h5>
-          <ul class="list-unstyled">
-            <li><a href="#"><i class="fas fa-angle-right"></i> Acélgerendás kiváltás, áthidalás</a></li>
-            <li><a href="#"><i class="fas fa-angle-right"></i> Betonfúrás</a></li>
-            <li><a href="#"><i class="fas fa-angle-right"></i> Betonvágás</a></li>
-            <li><a href="#"><i class="fas fa-angle-right"></i> Bontás</a></li>
+        <div class="col-auto col-lg-2 d-flex justify-content-end">
+          <ul class="social-icons social-icons-light">
+          <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/peeta_lol" target="_blank" title="" data-bs-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+		      <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="https://www.facebook.com/peetavagyok" target="_blank" title="" data-bs-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icons-email"><a data-toggle="tooltip" href="https://www.instagram.com/gellert.mp4/" target="_blank" title="" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-          <h5><span class="text-theme"> Munkaórák</span></h5>
-          <p>Keressen minket elérhetőségeink bármelyikén</p>
-          <ul class="list-unstyled working-hours clearfix">
-            <li><span>Hétfő - Péntek</span> 08:00 to 17:00</li>
-            <li><span>Hétvégén</span> Zárva</li>
-          </ul>
-          <div class="social-icons social-colored mt-3">
-              <ul class="list-inline mb-0">
-                <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li class="social-youtube"><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-              </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+		
+  <!-- Content
+  ============================================= -->
+  <div id="content" role="main"> 
+    
+    <!-- Intro
+    ============================================= -->
+    <section id="home">
+      <div class="hero-wrap">
+        <div class="hero-mask opacity-6 bg-dark"></div>
+        <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=nPCfC2TZVpw&t=334s',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:89, opacity:1}"></div>
+        <div class="hero-content section d-flex min-vh-100">
+          <div class="container my-auto">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="typed-strings">
+                  <!-- <p>I'm Simone Olivia</p>
+                  <p>I'm a Freelancer.</p>
+                  <p>I'm a Photographer.</p>
+                  <p>I'm a Designer.</p> -->
+
+                  <p>Fasz Simone Olivia vagyok</p>
+                  <p>Fasz a Freelancer vagyok</p>
+                  <p>Fasz a Photographer vagyok</p>
+                  <p>Fasz a Designer vagyok</p>
+                </div>
+                <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
+                <h2 class="text-16 fw-600 text-white mb-2 mb-md-3"><span class="typed"></span></h2>
+                <p class="text-5 text-light mb-4">based in Los Angeles, California.</p>
+				<a href="#contact" class="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2">Hire Me</a>
+              </div>
             </div>
+          </div>
+          <a href="#about" class="scroll-down-arrow text-white smooth-scroll"><span class="animated"><i class="fa fa-chevron-down"></i></span></a> </div>
+      </div>
+    </section>
+    <!-- Intro end --> 
+    
+    <!-- About
+    ============================================= -->
+    <section id="about" class="section bg-dark-1">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0">About Me</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Know Me More<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="row gy-5">
+          <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+            <h2 class="text-7 text-white fw-600 mb-3">I'm <span class="text-primary">Simone Olivia,</span> a Web Developer</h2>
+            <p class="text-white-50">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="text-white-50">Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+          </div>
+          <div class="col-lg-5 col-xl-4">
+            <div class="ps-lg-4">
+              <ul class="list-style-2 list-style-light text-light">
+                <li><span class="fw-600 me-2">Name:</span>Simone Olivia</li>
+                <li><span class="fw-600 me-2">Email:</span><a href="mailto:gellertszentleleki@gmail.com">gellertszentleleki@gmail.com</a></li>
+                <li><span class="fw-600 me-2">Age:</span>28</li>
+                <li class="border-0"><span class="fw-600 me-2">From:</span>Los Angeles, California</li>
+              </ul>
+              <a href="./docs/cv_gellert_szentleleki.pdf" download class="btn btn-primary rounded-pill">Download CV</a> </div>
+          </div>
+        </div>
+        <div class="brands-grid separator-border separator-border-light mt-5">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="featured-box text-center">
+                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="10">10</span>+</h4>
+                <p class="text-light mb-0">Years Experiance</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="featured-box text-center">
+                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="250">250</span>+</h4>
+                <p class="text-light mb-0">Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="featured-box text-center">
+                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="650">650</span>+</h4>
+                <p class="text-light mb-0">Projects Done</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="featured-box text-center">
+                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="38">20</span></h4>
+                <p class="text-light mb-0">Get Awards</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="secondary-footer">
-    <div class="container">
-      <div class="copyright">
-        <div class="row align-items-center">
-          <div class="col-md-7">
-           <span>©2024 VIP Partners Kft. | Minden Jog Fenntartva</span>
+    </section>
+    <!-- About end --> 
+    
+    <!-- Services
+    ============================================= -->
+    <section id="services" class="section bg-dark-2">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Services</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">What I Do?<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="row">
+          <div class="col-lg-11 mx-auto">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-5">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-video"></i> </div>
+                  <h3 class="text-white">Video icon</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-5">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-desktop"></i></div>
+                  <h3 class="text-white">Screen icon</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-5">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-camera"></i> </div>
+                  <h3 class="text-white">Camera icon</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-5">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-paint-brush"></i> </div>
+                  <h3 class="text-white">App Design &amp; Develop</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-5 mb-md-0">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-chart-area"></i> </div>
+                  <h3 class="text-white">Business Analysis</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="featured-box style-3 mb-0">
+                  <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fas fa-bullhorn"></i> </div>
+                  <h3 class="text-white">SEO Marketing</h3>
+                  <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-5 text-md-end mt-3 mt-md-0 footer-list">
-            <ul class="list-inline">
-              <li><a href="#">Adatkezelés</a></li>
+        </div>
+      </div>
+    </section>
+    <!-- Services end --> 
+    
+    <!-- Resume
+    ============================================= -->
+    <section id="resume" class="section bg-dark-1">
+      <div class="container popup-ajax-gallery"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0">Summary</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Resume<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+
+        <div class="row gx-5">
+          <!-- My Education -->
+          <h2 class="text-6 text-white fw-600 mb-4">My Education</h2>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2000 - 2004</p>
+              <h3 class="text-5 text-white">Computer Science</h3>
+              <p class="text-primary">International University</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-5">
+          <!-- My Experience -->
+          <h2 class="text-6 text-white fw-600 mb-4">My Experience</h2>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2000 - 2004</p>
+              <h3 class="text-5 text-white">Computer Science</h3>
+              <p class="text-primary">International University</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+              <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-1.html">See more</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark rounded p-4 mb-4">
+              <p class="badge bg-danger text-2 fw-400">2005 - 2008</p>
+              <h3 class="text-5 text-white">Bachelor Degree</h3>
+              <p class="text-primary">University of California</p>
+              <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+            </div>
+          </div>
+        </div>
+        <!-- My Skills -->
+		<h2 class="text-6 text-white fw-600 mt-4 mb-4">My Skills</h2>
+        <div class="row gx-5">
+          <div class="col-md-6">
+            <p class="text-light fw-500 text-start mb-2">Web Design <span class="float-end">65%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-light fw-500 text-start mb-2">HTML/CSS <span class="float-end">95%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-light fw-500 text-start mb-2">JavaScript <span class="float-end">80%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="text-light fw-500 text-start mb-2">React JS <span class="float-end">70%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-light fw-500 text-start mb-2">Angular Js <span class="float-end">60%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-light fw-500 text-start mb-2">Bootstrap <span class="float-end">99%</span></p>
+            <div class="progress progress-sm bg-dark mb-4">
+              <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5"><a href="./docs/cv_gellert_szentleleki.pdf" download class="btn btn-outline-secondary rounded-pill shadow-none">Download CV <span class="ms-1"><i class="fas fa-download"></i></span></a></div>
+      </div>
+    </section>
+    <!-- Resume end --> 
+    
+    <!-- Portfolio
+    ============================================= -->
+    <section id="portfolio" class="section bg-dark-2">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Portfolio</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">My Work<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end--> 
+        
+        <!-- Filter Menu -->
+        <ul class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
+          <li class="nav-item"> <a data-filter="*" class="nav-link active" href="">All</a></li>
+          <li class="nav-item"> <a data-filter=".design" href="" class="nav-link">Design</a></li>
+          <li class="nav-item"> <a data-filter=".brand" href="" class="nav-link">Brand</a></li>
+          <li class="nav-item"> <a data-filter=".photos" href="" class="nav-link">Photos</a></li>
+        </ul>
+        <!-- Filter Menu end -->
+        <div class="portfolio popup-ajax-gallery">
+          <div class="row portfolio-filter g-4">
+            <div class="col-sm-6 col-lg-4 brand">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-1.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-1.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 design">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-2.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-2.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 artwork photos">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-3.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-3.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 artwork brand photos">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-4.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-4.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 design">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-5.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-5.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 brand">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-6.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-6.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 design photos">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-7.jpg" alt="">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-7.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Project Title</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio end --> 
+    
+    <!-- Testimonial
+    ============================================= -->
+    <!-- <section id="testimonial" class="section bg-dark-1">
+      <div class="container"> 
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0">Testimonial</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Client Speak<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        
+        <div class="owl-carousel owl-light owl-theme" data-autoplaytimeout="5500" data-autoplayhoverpause="true" data-loop="true" data-nav="false" data-autoplay="true" data-margin="25" data-stagepadding="0" data-slideby="1" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="2">
+          <div class="item">
+            <div class="bg-dark rounded p-5">
+              <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-3.jpg" alt="">
+                <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Dennis Jacques</strong> <span class="text-white-50 fw-500">User from USA</span></p>
+              </div>
+              <p class="text-light mb-4">“Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
+              <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> </span> </div>
+          </div>
+          <div class="item">
+            <div class="bg-dark rounded p-5">
+              <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-1.jpg" alt="">
+                <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Jay Shah</strong> <span class="text-white-50 fw-500">Founder at Icomatic Pvt Ltd</span></p>
+              </div>
+              <p class="text-light mb-4">"Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.”</p>
+              <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> </span> </div>
+          </div>
+          <div class="item">
+            <div class="bg-dark rounded p-5">
+              <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-2.jpg" alt="">
+                <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Patrick Cary</strong> <span class="text-white-50 fw-500">Freelancer from USA</span></p>
+              </div>
+              <p class="text-light mb-4">“I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”</p>
+              <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> </span> </div>
+          </div>
+          <div class="item">
+            <div class="bg-dark rounded p-5">
+              <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-4.jpg" alt="">
+                <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Chris Tom</strong> <span class="text-white-50 fw-500">User from UK</span></p>
+              </div>
+              <p class="text-light mb-4">“I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.”</p>
+              <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> </span> </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Testimonial end --> 
+    
+    <!-- Contact Me
+    ============================================= -->
+    <section id="contact" class="section bg-dark-1">
+      <div class="container">
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Contact</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Get in Touch<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        <div class="row gy-5">
+          <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+            <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
+            <p class="text-3 text-light mb-4">4th Floor, Plot No.22,<br>
+              145 Murphy Canyon Rd.<br>
+              San Diego CA 2028 </p>
+            <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fas fa-phone"></i></span>+44 77 29 02 56 33</p>
+            <!-- <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fas fa-fax"></i></span>(060) 555 545 555</p> -->
+            <p class="text-3 text-light mb-4"><span class="text-primary text-4 me-2"><i class="fas fa-envelope"></i></span>gellertszentleleki@gmail.com</p>
+            <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
+            <ul class="social-icons social-icons-muted justify-content-center justify-content-md-start">
+              <!-- <li class="social-icons-dribbble"><a data-bs-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a></li> -->
+              <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/peeta_lol" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="https://www.facebook.com/peetavagyok" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-icons-email"><a data-toggle="tooltip" href="https://www.instagram.com/gellert.mp4/" target="_blank" title="" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+              <!-- <li class="social-icons-google"><a data-bs-toggle="tooltip" href="http://www.google.com/" target="_blank" title="Google"><i class="fab fa-google"></i></a></li>
+              <li class="social-icons-github"><a data-bs-toggle="tooltip" href="http://www.github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li> -->
             </ul>
           </div>
+          <div class="col-md-8 col-xl-9 order-0 order-md-1">
+            <h2 class="mb-3 text-5 text-white text-uppercase text-center text-md-start">Send us a note</h2>
+			<form id="contact-form" class="form-dark" action="php/mail.php" method="post">
+			  <div class="row g-4">
+                <div class="col-xl-6">
+                    <input name="name" type="text" class="form-control" required placeholder="Name">
+                </div>
+                <div class="col-xl-6">
+                    <input name="email" type="email" class="form-control" required placeholder="Email">
+                </div>
+				<div class="col">
+					<textarea name="form-message" class="form-control" rows="5" required placeholder="Tell us more about your needs........"></textarea>
+				</div>
+              </div>
+              <p class="text-center mt-4 mb-0">
+				<button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send Message</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me end --> 
+    
+  </div>
+  <!-- Content end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back to Top
+============================================= --> 
+<a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+
+<!-- Test portfolio popup local-->
+<!-- ************************************************************ -->
+<!-- ************************************************************ -->
+<!-- 
+<div class="container ajax-container bg-dark-1">
+  <h2 class="text-6 font-weight-600 text-center text-white mb-4">Project Title 1</h2>
+  <div class="row g-4">
+    <div class="col-sm-7">
+      <div class="owl-carousel owl-theme owl-light single-slideshow" data-autoplay="true" data-loop="true" data-nav="true" data-items="1">
+        <div class="item"> <img class="img-fluid" alt="" src="images/projects/project-1.jpg"> </div>
+        <div class="item"> <img class="img-fluid" alt="" src="images/projects/project-5.jpg"> </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <h4 class="text-4 font-weight-600 text-white">Project Info:</h4>
+      <p class="text-white-50">Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+      <h4 class="text-4 font-weight-600 text-white mt-4">Project Details:</h4>
+      <ul class="list-style-2 list-style-light text-white-50">
+        <li><span class="text-light font-weight-600 me-2">Client:</span>Ruby Clinton</li>
+        <li><span class="text-light font-weight-600 me-2">Industry:</span>Art & Design</li>
+        <li><span class="text-light font-weight-600 me-2">Technologies:</span>iOS, HTML5, CSS3, PHP, Java</li>
+        <li><span class="text-light font-weight-600 me-2">Date:</span>July 16, 2019</li>
+        <li><span class="text-light font-weight-600 me-2">URL:</span><a href="#" target="_blank">www.example.cobb</a></li>
+      </ul>
+      <div class="row no-gutters align-items-center">
+        <div class="col-auto text-light font-weight-600">Share: </div>
+        <div class="col-auto">
+          <ul class="social-icons social-icons-muted">
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-google"><a data-toggle="tooltip" href="http://www.google.com/" target="_blank" title="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
+            <li class="social-icons-instagram"><a data-toggle="tooltip" href="http://www.instagram.com/" target="_blank" title="" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li class="social-icons-email"><a data-toggle="tooltip" href="http://www.instagram.com/" target="_blank" title="" data-original-title="Email"><i class="fas fa-envelope"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</footer>
+  
+</div> -->
+<!-- ************************************************************ -->
+<!-- ************************************************************ -->
 
-<!--footer end-->
 
-
-</div>
-
-<!-- page wrapper end -->
-
-<!--back-to-top start-->
-
-<div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fas fa-chevron-up"></i></a></div>
-
-<!--back-to-top end-->
-
- 
-<!-- inject js start -->
-
-<!--== theme -->
+<!-- JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Easing --> 
+<script src="vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Appear --> 
+<script src="vendor/jquery.appear/jquery.appear.min.js"></script> 
+<!-- Images Loaded --> 
+<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> 
+<!-- Counter --> 
+<script src="vendor/jquery.countTo/jquery.countTo.min.js"></script> 
+<!-- Parallax Bg --> 
+<script src="vendor/parallaxie/parallaxie.min.js"></script> 
+<!-- Typed --> 
+<script src="vendor/typed/typed.min.js"></script>
+<!-- Youtube Video Background --> 
+<script src="vendor/jquery.mb.YTPlayer/jquery.mb.YTPlayer.min.js"></script> 
+<!-- Owl Carousel --> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<!-- isotope Portfolio Filter --> 
+<script src="vendor/isotope/isotope.pkgd.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script --> 
 <script src="js/theme.js"></script>
-
-<!--== magnific-popup -->
-<script src="js/magnific-popup/jquery.magnific-popup.min.js"></script> 
-
-<!--== owl-carousel -->
-<script src="js/owl-carousel/owl.carousel.min.js"></script> 
-
-<!--== parallax -->
-<script src="js/parallax/parallaxie.min.js"></script>
-
-<!--== counter -->
-<script src="js/counter/counter.js"></script> 
-
-<!--== particle -->
-<script src="js/particle/jquery.particleground.min.js"></script> 
-
-<!--== countdown -->
-<script src="js/countdown/jquery.countdown.min.js"></script> 
-
-<!--== isotope -->
-<script src="js/isotope/isotope.pkgd.min.js"></script> 
-
-<!--== contact-form -->
-<script src="js/contact-form/contact-form.js"></script>
-
-<!--== theme-script -->
-<script src="js/theme-script.js"></script>
-
-<!-- inject js end -->
-
 </body>
-
 </html>
