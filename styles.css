@@ -8,6 +8,12 @@ html, body {
     width: 100%;
 }
 
+.hero-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
 .test-class {
     /* border: 2px solid red; */
 }
@@ -46,12 +52,16 @@ html, body {
     border-radius: 600px;
     border: 1px solid #D9D9DC;
     height: 48px;
-
+    width: 100%;
     color: var(--ink-placeholder, #868686);
-
+    padding: 0 20px;
     font-family: Poppins;
     font-size: 16px;
     line-height: 22px; /* 137.5% */
+}
+
+.subscribe-input:focus {
+  outline: none;
 }
 
 .subscribe-button {
@@ -66,6 +76,11 @@ html, body {
     font-weight: 500;
     line-height: 19px; /* 118.75% */
     border: none;
+}
+
+.subscribe-button:hover {
+  background-color: #6ea3fb;
+  /* font-size: 18px; */
 }
 
 /* Infinity moving cards */
@@ -84,8 +99,8 @@ html, body {
 }
 
 .image-column {
-  height: 400px;
-  width: 150px;
+  height: 90vh;
+  width: 250px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -104,12 +119,12 @@ html, body {
 
 /* Up Animation */
 .up {
-  animation: scrollUp 40s linear infinite;
+  animation: scrollUp 100s linear infinite;
 }
 
 /* Down Animation */
 .down {
-  animation: scrollDown 40s linear infinite;
+  animation: scrollDown 100s linear infinite;
 }
 
 @keyframes scrollUp {
