@@ -177,6 +177,88 @@ html, body {
   text-align: right;
 }
 
+.sub-section-title-label {
+  width: fit-content;
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  border-radius: 600px;
+  border: 0.5px solid var(--linear-grad-blueish, #F0F5FF);
+  background: linear-gradient(189deg, var(--Light-Blue-blue-50, #EDF4FF) 4.62%, var(--Light-Blue-blue-100, #C7DCFD) 91.18%);
+  color: var(--ink-text-secondary, #3564B2);
+  /* Text - Medium/14 */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  margin-bottom: 16px;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.bottom-gradient-bg {
+  background: linear-gradient(180deg, #FEFFFF 21.89%, #CCE0FF 104.16%);
+}
+
+  .mockup-image-container {
+    text-align: center;
+  }
+
+  .mockup-image-container img {
+    max-width: 40vw;
+  }
+
+footer {
+  background: var(--DarkBlue-darkblue-900, #040F2A);
+  height: 20vh;
+}
+
+.footer-logo-container {
+
+}
+
+.footer-title {
+  color: var(--brand-generic-white, #FFF);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px; /* 118.75% */
+  margin-bottom: 16px;
+}
+
+.footer-text a,
+.footer-text
+{
+  color: var(--ink-indicator, #C9CACB);
+  /* text-align: center; */
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.footer-text a:hover {
+  color: white;
+}
+
+.social-logo-container {
+  gap: 5px
+}
+
+.social-icon {
+  
+}
+
 /* *************** */
 /* Infinity moving cards */
 /* *************** */
@@ -296,6 +378,23 @@ html, body {
 
   .hpd-card-container {
     margin-bottom: 20px;
+  }
+
+  .match-container {
+    height: auto;
+  }
+
+    .mockup-image-container img {
+    max-width: 80vw;
+  }
+
+  footer {
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .footer-item {
+    margin-bottom: 24px;
   }
 }
 
