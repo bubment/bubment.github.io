@@ -83,8 +83,10 @@ html, body {
   background-color: #6ea3fb;
 }
 
+
 .parenting-container {
     height: 60vh;
+    min-height: 500px;
     display: flex;
     align-items: center;
 }
@@ -133,8 +135,47 @@ html, body {
     line-height: 22px;
 }
 
+.swipe-play-repeat-container {
+  height: 40vh;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.hpd-card-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--linear-grad-blueish, linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%));
+}
 
+.hpd-card-title {
+  align-self: stretch;
+  color: var(--ink-text-secondary, #3564B2);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+  letter-spacing: 0.4px;
+}
+
+.hpd-card-text {
+  align-self: stretch;
+  color: var(--ink-info-dark, var(--ink-info-dark, #5A5A5C));
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 22px; /* 137.5% */
+}
+
+.hpd-card-icon-container {
+  width: 100%;
+  text-align: right;
+}
 
 /* *************** */
 /* Infinity moving cards */
@@ -245,6 +286,16 @@ html, body {
   .parenting-container {
     margin-top: 30px;
     height: auto;
+  }
+
+  .swipe-play-repeat-container {
+    margin-top: 20px;
+    height: auto;
+    max-height: none;
+  }
+
+  .hpd-card-container {
+    margin-bottom: 20px;
   }
 }
 
