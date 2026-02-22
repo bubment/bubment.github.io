@@ -3,19 +3,18 @@ html, body {
     padding: 0;
 }
 
-.hero {
-    background: var(--linear-grad-blueish, linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%));
-    width: 100%;
+.main-section {
+  width: 100%;
+}
+
+.gradient-setcin-bg {
+  background: var(--linear-grad-blueish, linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%));
 }
 
 .hero-container {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.test-class {
-    /* border: 2px solid red; */
 }
 
 .hero-content-container {
@@ -82,8 +81,60 @@ html, body {
 
 .subscribe-button:hover {
   background-color: #6ea3fb;
-  /* font-size: 18px; */
 }
+
+.parenting-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.parenting-image-container {
+
+}
+
+.parenting-image {
+
+}
+
+.sub-section-title {
+  color: var(--ink-text-dark, #040F2A);
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px; 
+  letter-spacing: 0.64px;
+  margin-bottom: 8px;
+}
+
+.sub-section-text {
+  color: var(--ink-info-dark, #5A5A5C);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  margin-bottom: 24px;
+}
+
+.parenting-list-container {
+
+}
+
+.parenting-list-item {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: var(--ink-text-secondary, #3564B2);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+
 
 /* *************** */
 /* Infinity moving cards */
@@ -104,7 +155,7 @@ html, body {
 }
 
 .image-column {
-  height: 90vh;
+  height: 100vh;
   width: 40%;
   overflow: hidden;
   border-radius: 12px;
@@ -117,7 +168,6 @@ html, body {
 
 .track img {
   width: 100%;
-  /* height: 150px; */
   object-fit: cover;
   margin: 5px 0;
 }
@@ -190,6 +240,11 @@ html, body {
 
   .subscribe-button {
     width: 100%;
+  }
+
+  .parenting-container {
+    margin-top: 30px;
+    height: auto;
   }
 }
 
