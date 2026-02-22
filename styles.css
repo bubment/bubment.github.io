@@ -371,7 +371,7 @@ footer {
   }
 
   .swipe-play-repeat-container {
-    margin-top: 20px;
+    margin-top: 30px;
     height: auto;
     max-height: none;
   }
@@ -381,7 +381,9 @@ footer {
   }
 
   .match-container {
+    margin-top: 30px;
     height: auto;
+    padding-bottom: 20px;
   }
 
     .mockup-image-container img {
@@ -389,7 +391,8 @@ footer {
   }
 
   footer {
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 12px;
     height: auto;
   }
 
