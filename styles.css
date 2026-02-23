@@ -152,6 +152,11 @@ body {
   border-radius: 20px;
   gap: 24px;
   padding: 20px;
+  transition: transform 0.1s ease;
+}
+
+.hpd-card-container:hover {
+  transform: translateY(-10px);
 }
 
 .hpd-card-title {
