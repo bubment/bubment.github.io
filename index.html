@@ -39,6 +39,7 @@
 
         <!-- Custom styles -->
         <link rel="stylesheet" href="./styles.css">
+        <script defer src="animation.js"></script>
     </head>
     <body>
         <!-- Hero section starts -->
@@ -46,7 +47,7 @@
             <div class="container hero-container d-flex align-items-center">
                 <div class="row">
                     <div class="col-md-6 d-flex">
-                        <div class="hero-content-container d-flex flex-column justify-content-center align-items-start">
+                        <div class="hero-content-container d-flex flex-column justify-content-center align-items-start hidden">
                             <div><img src="./assets/playdates-logo.svg" alt="HelloPlaydates logo" fetchpriority="high"></div>
                             <h1 class="hero-title">Find local families who match your vibe and plan playdates easily together</h1>
                             <div class="hero-text">Meet with nearby parents who match your kids' ages, your vibe and schedule. Connect, chat, and start new friendships.</div>
@@ -105,12 +106,12 @@
         <section id="parenting-is-better-together" class="main-section" aria-labelledby="parenting-title">
             <div class="container parenting-container d-flex align-items-center">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 hidden">
                         <div class="parenting-image-container">
                             <img class="parenting-image w-100" src="./assets/parenting-better.png" alt="Happy family time together" loading="lazy">
                         </div>
                     </div>
-                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                    <div class="col-md-7 d-flex flex-column justify-content-center hidden">
                         <h2 id="parenting-title" class="sub-section-title">Parenting is better together</h2>
                         <div class="sub-section-text">
                             Making parent friends is surprisingly hard. Everyone's busy, conversations are rushed, and planning feels like a full-time job. The HelloPlaydates app brings parents together in one place - helping you meet like-minded families nearby, match based on shared interests and kids' ages, and turn conversations into real-life playdates.
@@ -128,7 +129,7 @@
 
         <!-- Swipe play repeat starts -->
         <section id="swipe-play-repeat" class="main-section swipe-play-repeat-container d-flex flex-column justify-content-center" aria-labelledby="swipe-title">
-            <div class="container">
+            <div class="container hidden">
                 <h2 id="swipe-title" class="sub-section-title">Swipe. Play. Repeat.</h2>
                 <div class="sub-section-text">
                     The simple way to turn digital matches into real-world friendships for you and your kids.
@@ -137,7 +138,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="hpd-card-container d-flex flex-column align-items-start">
+                        <div class="hpd-card-container hidden d-flex flex-column align-items-start">
                             <h3 class="hpd-card-title">Match with playmates</h3>
                             <div class="hpd-card-text">Connect with families by kids' ages, location, and interests to create lasting friendships for you and your kids.</div>
                             <div class="hpd-card-icon-container w-100 text-end">
@@ -146,7 +147,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="hpd-card-container d-flex flex-column align-items-start">
+                        <div class="hpd-card-container hidden transition-delay-200 d-flex flex-column align-items-start">
                             <h3 class="hpd-card-title">Chat and connect</h3>
                             <div class="hpd-card-text">Reach out and plan once you have a match. Connect safely and coordinate logistics in-app</div>
                             <div class="hpd-card-icon-container w-100 text-end">
@@ -155,7 +156,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="hpd-card-container d-flex flex-column align-items-start">
+                        <div class="hpd-card-container hidden transition-delay-400 d-flex flex-column align-items-start">
                             <h3 class="hpd-card-title">Meet on playdates</h3>
                             <div class="hpd-card-text">Create hunders of meaningful playdate experiences with a simple planning process.<br><br></div>
                             <div class="hpd-card-icon-container w-100 text-end">
@@ -172,7 +173,7 @@
         <section id="match-with-families" class="main-section bottom-gradient-bg" aria-labelledby="match-title">
             <div class="container match-container d-flex flex-column justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="col-md-6 d-flex flex-column justify-content-center hidden">
                         <div class="sub-section-title-label d-flex justify-content-center align-items-end">Get Early Access</div>
                         <h2 id="match-title" class="sub-section-title">Match with families like yours</h2>
                         <div class="sub-section-text">
@@ -188,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden">
                         <div class="mockup-image-container">
                             <img src="./assets/playdates-phone-mockup.png" alt="HelloPlaydates app mobile interface preview" loading="lazy">
                         </div>
