@@ -3,13 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HelloPlaydates</title>
-        <meta name="description" content="">
+        <title>HelloPlaydates – Find Local Families for Playdates</title>
+        <meta name="description" content="HelloPlaydates helps parents find local families for playdates. Match by kids' ages, interests, and schedules. Connect with like-minded families nearby and plan playdates easily.">
+        <meta name="keywords" content="playdates, parenting app, find playdate, family connection, kids activities, parent meetup, local families, playdate planning">
+        <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="https://helloplaydates.com/">
 
         <!-- Favicon -->
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./assets/favicon.ico">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="HelloPlaydates – Find Local Families for Playdates">
+        <meta property="og:description" content="Meet nearby parents who match your kids' ages, your vibe and schedule. Connect, chat, and start new friendships. Join the waitlist today.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://helloplaydates.com/">
+        <meta property="og:image" content="https://helloplaydates.com/assets/playdates-phone-mockup.png">
+        <meta property="og:site_name" content="HelloPlaydates">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="HelloPlaydates – Find Local Families for Playdates">
+        <meta name="twitter:description" content="Meet nearby parents who match your kids' ages, your vibe and schedule. Connect, chat, and start new friendships.">
+        <meta name="twitter:image" content="https://helloplaydates.com/assets/playdates-phone-mockup.png">
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,18 +42,18 @@
     </head>
     <body>
         <!-- Hero section starts -->
-        <div id="hero" class="main-section hero-gradient-bg">
+        <header id="hero" class="main-section hero-gradient-bg">
             <div class="container hero-container d-flex align-items-center">
                 <div class="row">
                     <div class="col-md-6 d-flex">
                         <div class="hero-content-container d-flex flex-column justify-content-center align-items-start">
-                            <div><img src="./assets/playdates-logo.svg" alt="HelloPlaydates logo"></div>
-                            <div class="hero-title">Find local families who match your vibe and plan playdates easily together</div>
+                            <div><img src="./assets/playdates-logo.svg" alt="HelloPlaydates logo" fetchpriority="high"></div>
+                            <h1 class="hero-title">Find local families who match your vibe and plan playdates easily together</h1>
                             <div class="hero-text">Meet with nearby parents who match your kids' ages, your vibe and schedule. Connect, chat, and start new friendships.</div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-7 p-0">
-                                        <input class="subscribe-input" type="text" placeholder="Enter your email address">
+                                        <input class="subscribe-input" type="email" aria-label="Email address" placeholder="Enter your email address">
                                     </div>
                                     <div class="col-md-5 subscribe-button-container"><button class="subscribe-button">Join Waitlist</button></div>
                                 </div>
@@ -44,7 +62,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="parent d-flex justify-content-end align-items-center">
-                            <div class="columns-wrapper d-flex justify-content-center">
+                            <div class="columns-wrapper d-flex justify-content-center" aria-hidden="true">
 
                                 <div class="image-column">
                                     <div class="track up">
@@ -79,38 +97,39 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <!-- Hero section ends -->
 
+        <main>
         <!-- Parenting is better together starts -->
-        <div id="parenting-is-better-together" class="main-section">
+        <section id="parenting-is-better-together" class="main-section" aria-labelledby="parenting-title">
             <div class="container parenting-container d-flex align-items-center">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="parenting-image-container">
-                            <img class="parenting-image w-100" src="./assets/parenting-better.png" alt="Happy family time together">
+                            <img class="parenting-image w-100" src="./assets/parenting-better.png" alt="Happy family time together" loading="lazy">
                         </div>
                     </div>
                     <div class="col-md-7 d-flex flex-column justify-content-center">
-                        <div class="sub-section-title">Parenting is better together</div>
+                        <h2 id="parenting-title" class="sub-section-title">Parenting is better together</h2>
                         <div class="sub-section-text">
                             Making parent friends is surprisingly hard. Everyone's busy, conversations are rushed, and planning feels like a full-time job. The HelloPlaydates app brings parents together in one place - helping you meet like-minded families nearby, match based on shared interests and kids' ages, and turn conversations into real-life playdates.
                         </div>
                         <ul class="p-0">
-                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="">Effortless planning for busy parents</li>
-                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="">Meet like-minded families nearby</li>
-                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="">Less effort. More real moments</li>
+                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="" aria-hidden="true">Effortless planning for busy parents</li>
+                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="" aria-hidden="true">Meet like-minded families nearby</li>
+                            <li class="parenting-list-item"><img src="./assets/check-circle-broken.png" alt="" aria-hidden="true">Less effort. More real moments</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Parenting is better together ends -->
 
         <!-- Swipe play repeat starts -->
-        <div id="swipe-play-repeat" class="main-section swipe-play-repeat-container d-flex flex-column justify-content-center">
+        <section id="swipe-play-repeat" class="main-section swipe-play-repeat-container d-flex flex-column justify-content-center" aria-labelledby="swipe-title">
             <div class="container">
-                <div class="sub-section-title">Swipe. Play. Repeat.</div>
+                <h2 id="swipe-title" class="sub-section-title">Swipe. Play. Repeat.</h2>
                 <div class="sub-section-text">
                     The simple way to turn digital matches into real-world friendships for you and your kids.
                 </div>
@@ -119,43 +138,43 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="hpd-card-container d-flex flex-column align-items-start">
-                            <div class="hpd-card-title">Match with playmates</div>
+                            <h3 class="hpd-card-title">Match with playmates</h3>
                             <div class="hpd-card-text">Connect with families by kids' ages, location, and interests to create lasting friendships for you and your kids.</div>
                             <div class="hpd-card-icon-container w-100 text-end">
-                                <img src="./assets/icon-stars.png">
+                                <img src="./assets/icon-stars.png" alt="" aria-hidden="true" loading="lazy">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="hpd-card-container d-flex flex-column align-items-start">
-                            <div class="hpd-card-title">Chat and connect</div>
+                            <h3 class="hpd-card-title">Chat and connect</h3>
                             <div class="hpd-card-text">Reach out and plan once you have a match. Connect safely and coordinate logistics in-app</div>
                             <div class="hpd-card-icon-container w-100 text-end">
-                                <img src="./assets/icon-chat.png">
+                                <img src="./assets/icon-chat.png" alt="" aria-hidden="true" loading="lazy">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="hpd-card-container d-flex flex-column align-items-start">
-                            <div class="hpd-card-title">Meet on playdates</div>
+                            <h3 class="hpd-card-title">Meet on playdates</h3>
                             <div class="hpd-card-text">Create hunders of meaningful playdate experiences with a simple planning process.<br><br></div>
                             <div class="hpd-card-icon-container w-100 text-end">
-                                <img src="./assets/icon-calendar-heart.png">
+                                <img src="./assets/icon-calendar-heart.png" alt="" aria-hidden="true" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Swipe play repeat ends -->
 
         <!-- Match with families starts -->
-        <div id="match-with-families" class="main-section bottom-gradient-bg">
+        <section id="match-with-families" class="main-section bottom-gradient-bg" aria-labelledby="match-title">
             <div class="container match-container d-flex flex-column justify-content-center">
                 <div class="row">
                     <div class="col-md-6 d-flex flex-column justify-content-center">
                         <div class="sub-section-title-label d-flex justify-content-center align-items-end">Get Early Access</div>
-                        <div class="sub-section-title">Match with families like yours</div>
+                        <h2 id="match-title" class="sub-section-title">Match with families like yours</h2>
                         <div class="sub-section-text">
                             Be part of a new way for parents to connect and making meaningful friendships for you and your kids.
                             Join the waitlist to get early access to the app.
@@ -163,7 +182,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-7 p-0">
-                                    <input class="subscribe-input" type="text" placeholder="Enter your email address">
+                                    <input class="subscribe-input" type="email" aria-label="Email address" placeholder="Enter your email address">
                                 </div>
                                 <div class="col-md-5 subscribe-button-container"><button class="subscribe-button">Join Waitlist</button></div>
                             </div>
@@ -171,13 +190,14 @@
                     </div>
                     <div class="col-md-6">
                         <div class="mockup-image-container">
-                            <img src="./assets/playdates-phone-mockup.png">
+                            <img src="./assets/playdates-phone-mockup.png" alt="HelloPlaydates app mobile interface preview" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Match with families ends -->
+        </main>
 
         <!-- Footer starts -->
         <footer class="d-flex align-items-center">
