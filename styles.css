@@ -1,63 +1,83 @@
+/* ===========================
+   CSS Variables
+   =========================== */
+
+:root {
+  --color-dark:        #040F2A;
+  --color-secondary:   #3564B2;
+  --color-body:        #5A5A5C;
+  --color-placeholder: #868686;
+  --color-border:      #D9D9DC;
+  --color-muted:       #C9CACB;
+  --color-white:       #FFFFFF;
+  --color-on-primary:  #F7F9F9;
+  --color-blue:        #4A8DFA;
+  --color-blue-hover:  #6EA3FB;
+  --gradient-blueish:  linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%);
+  --gradient-bottom:   linear-gradient(180deg, #FEFFFF 21.89%, #CCE0FF 104.16%);
+  --font-family:       'Poppins', sans-serif;
+}
+
+/* ===========================
+   Global / Reset
+   =========================== */
+
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.main-section {
-  width: 100%;
+body {
+  font-family: var(--font-family);
 }
 
-.gradient-setcin-bg {
-  background: var(--linear-grad-blueish, linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%));
+/* ===========================
+   Hero Section
+   =========================== */
+
+.hero-gradient-bg {
+  background: var(--gradient-blueish);
 }
 
 .hero-container {
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 .hero-content-container {
-    display: flex;
-    padding-bottom: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
+  align-self: stretch;
+  flex: 1 0 0;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 .hero-title {
-    color: var(--ink-text-dark, #040F2A);
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 46px; /* 127.778% */
-    letter-spacing: 0.72px;
+  color: var(--color-dark);
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+  line-height: 46px;
 }
 
 .hero-text {
-    color: var(--ink-info-dark, #5A5A5C);
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 144.444% */
+  color: var(--color-body);
+  font-size: 18px;
+  line-height: 26px;
 }
 
+/* ===========================
+   Subscribe Input & Button
+   =========================== */
+
 .subscribe-input {
-    border-radius: 600px;
-    border: 1px solid #D9D9DC;
-    height: 48px;
-    width: 100%;
-    color: var(--ink-placeholder, #868686);
-    padding: 0 20px;
-    font-family: Poppins;
-    font-size: 16px;
-    line-height: 22px; /* 137.5% */
-    margin-bottom: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 600px;
+  color: var(--color-placeholder);
+  font-size: 16px;
+  height: 48px;
+  line-height: 22px;
+  margin-bottom: 8px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .subscribe-input:focus {
@@ -65,223 +85,175 @@ html, body {
 }
 
 .subscribe-button {
-    border-radius: 6000px;
-    background: var(--Light-Blue-blue-500, #4A8DFA);
-    height: 48px;
-    padding: 12px 20px;
-    justify-content: center;
-    gap: 6px;
-    color: var(--ink-on-primary, #F7F9F9);
-    font-family: Poppins;
-    font-weight: 500;
-    line-height: 19px; /* 118.75% */
-    border: none;
-    min-width: max-content;
+  background: var(--color-blue);
+  border: none;
+  border-radius: 6000px;
+  color: var(--color-on-primary);
+  font-weight: 500;
+  height: 48px;
+  line-height: 19px;
+  min-width: max-content;
+  padding: 12px 20px;
 }
 
 .subscribe-button:hover {
-  background-color: #6ea3fb;
+  background-color: var(--color-blue-hover);
 }
 
+/* ===========================
+   Parenting Is Better Together Section
+   =========================== */
 
 .parenting-container {
-    height: 60vh;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-}
-
-.parenting-image-container {
-
-}
-
-.parenting-image {
-
+  height: 60vh;
+  min-height: 500px;
 }
 
 .sub-section-title {
-  color: var(--ink-text-dark, #040F2A);
-  font-family: Poppins;
+  color: var(--color-dark);
   font-size: 32px;
   font-weight: 500;
-  line-height: 40px; 
   letter-spacing: 0.64px;
+  line-height: 40px;
   margin-bottom: 8px;
 }
 
 .sub-section-text {
-  color: var(--ink-info-dark, #5A5A5C);
-  font-family: Poppins;
+  color: var(--color-body);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 137.5% */
+  line-height: 22px;
   margin-bottom: 24px;
 }
 
-.parenting-list-container {
-
-}
-
 .parenting-list-item {
-    display: flex;
-    align-items: flex-end;
-    gap: 8px;
-    margin-bottom: 12px;
-    color: var(--ink-text-secondary, #3564B2);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  align-items: flex-end;
+  color: var(--color-secondary);
+  display: flex;
+  font-size: 16px;
+  gap: 8px;
+  line-height: 22px;
+  margin-bottom: 12px;
 }
+
+/* ===========================
+   Swipe Play Repeat Section
+   =========================== */
 
 .swipe-play-repeat-container {
   height: 40vh;
   max-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .hpd-card-container {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
   align-self: stretch;
+  background: var(--gradient-blueish);
   border-radius: 20px;
-  background: var(--linear-grad-blueish, linear-gradient(180deg, #F0F5FF 21.89%, #C9DEFF 104.16%));
+  gap: 24px;
+  padding: 20px;
 }
 
 .hpd-card-title {
   align-self: stretch;
-  color: var(--ink-text-secondary, #3564B2);
-  font-family: Poppins;
+  color: var(--color-secondary);
   font-size: 20px;
   font-weight: 500;
-  line-height: 25px; /* 125% */
   letter-spacing: 0.4px;
+  line-height: 25px;
 }
 
 .hpd-card-text {
   align-self: stretch;
-  color: var(--ink-info-dark, var(--ink-info-dark, #5A5A5C));
-  font-family: Poppins;
+  color: var(--color-body);
   font-size: 16px;
-  line-height: 22px; /* 137.5% */
+  line-height: 22px;
 }
 
-.hpd-card-icon-container {
-  width: 100%;
-  text-align: right;
-}
+/* ===========================
+   Match With Families Section
+   =========================== */
 
+/* Uses Bootstrap: d-flex justify-content-center align-items-end */
 .sub-section-title-label {
-  width: fit-content;
-  display: flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 4px;
+  background: linear-gradient(189deg, #EDF4FF 4.62%, #C7DCFD 91.18%);
+  border: 0.5px solid #F0F5FF;
   border-radius: 600px;
-  border: 0.5px solid var(--linear-grad-blueish, #F0F5FF);
-  background: linear-gradient(189deg, var(--Light-Blue-blue-50, #EDF4FF) 4.62%, var(--Light-Blue-blue-100, #C7DCFD) 91.18%);
-  color: var(--ink-text-secondary, #3564B2);
-  /* Text - Medium/14 */
-  font-family: Poppins;
+  color: var(--color-secondary);
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 16px; /* 114.286% */
+  gap: 4px;
+  line-height: 16px;
   margin-bottom: 16px;
-}
-
-.match-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
+  padding: 12px 16px;
+  width: fit-content;
 }
 
 .bottom-gradient-bg {
-  background: linear-gradient(180deg, #FEFFFF 21.89%, #CCE0FF 104.16%);
+  background: var(--gradient-bottom);
 }
 
-  .mockup-image-container {
-    text-align: center;
-  }
+.match-container {
+  height: 80vh;
+}
 
-  .mockup-image-container img {
-    max-width: 40vw;
-  }
+.mockup-image-container {
+  text-align: center;
+}
+
+.mockup-image-container img {
+  max-width: 40vw;
+}
+
+/* ===========================
+   Footer
+   =========================== */
 
 footer {
-  background: var(--DarkBlue-darkblue-900, #040F2A);
+  background: var(--color-dark);
   height: 20vh;
 }
 
-.footer-logo-container {
-
-}
-
 .footer-title {
-  color: var(--brand-generic-white, #FFF);
-  font-family: Poppins;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px; /* 118.75% */
+  line-height: 19px;
   margin-bottom: 16px;
 }
 
-.footer-text a,
-.footer-text
-{
-  color: var(--ink-indicator, #C9CACB);
-  /* text-align: center; */
-  font-family: Poppins;
+.footer-text,
+.footer-text a {
+  color: var(--color-muted);
   font-size: 12px;
-  font-weight: 400;
-  line-height: 15px; /* 125% */
-  text-decoration: none;
+  line-height: 15px;
   margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .footer-text a:hover {
-  color: white;
+  color: var(--color-white);
 }
 
 .social-logo-container {
-  gap: 5px
+  gap: 5px;
 }
 
-.social-icon {
-  
-}
-
-/* *************** */
-/* Infinity moving cards */
-/* *************** */
+/* ===========================
+   Scrolling Card Columns (Hero)
+   =========================== */
 
 .parent {
-  display: flex;
-  justify-content: flex-end; /* moves columns to right side */
-  align-items: center;
   height: 500px;
 }
 
 .columns-wrapper {
-  display: flex;
   gap: 20px;
-  justify-content: center;
-
 }
 
 .image-column {
-  height: 100vh;
-  width: 40%;
-  overflow: hidden;
   border-radius: 12px;
+  height: 100vh;
+  overflow: hidden;
+  width: 40%;
 }
 
 .track {
@@ -290,67 +262,48 @@ footer {
 }
 
 .track img {
-  width: 100%;
-  object-fit: cover;
   margin: 5px 0;
+  object-fit: cover;
+  width: 100%;
 }
 
-/* Up Animation */
+/* Up animation */
 .up {
   animation: scrollUp 100s linear infinite;
 }
 
-/* Down Animation */
+/* Down animation */
 .down {
   animation: scrollDown 100s linear infinite;
 }
 
 @keyframes scrollUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
 }
 
 @keyframes scrollDown {
-  from {
-    transform: translateY(-50%);
-  }
-  to {
-    transform: translateY(0);
-  }
+  from { transform: translateY(-50%); }
+  to   { transform: translateY(0); }
 }
 
-/* *************** */
-/* Responsive design */
-/* *************** */
+/* ===========================
+   Responsive Design
+   =========================== */
 
 @media (max-width: 426px) {
-  .hero-title {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 125% */
-    letter-spacing: 0.64px;
+  .hero-container {
+    height: auto;
   }
 
-  .hero-text {
-    color: var(--ink-info-dark, #5A5A5C);
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px
-  }
-
-  .hero-content-container { 
+  .hero-content-container {
     padding: 20px;
   }
 
-  .hero-container {
-    height: auto;
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: 0.64px;
+    line-height: 40px;
   }
 
   .image-column {
@@ -366,13 +319,13 @@ footer {
   }
 
   .parenting-container {
-    margin-top: 30px;
     height: auto;
+    margin-top: 30px;
   }
 
   .swipe-play-repeat-container {
-    margin-top: 30px;
     height: auto;
+    margin-top: 30px;
     max-height: none;
   }
 
@@ -381,24 +334,22 @@ footer {
   }
 
   .match-container {
-    margin-top: 30px;
     height: auto;
+    margin-top: 30px;
     padding-bottom: 20px;
   }
 
-    .mockup-image-container img {
+  .mockup-image-container img {
     max-width: 80vw;
   }
 
   footer {
-    padding-top: 30px;
-    padding-left: 12px;
     height: auto;
+    padding-left: 12px;
+    padding-top: 30px;
   }
 
   .footer-item {
     margin-bottom: 24px;
   }
 }
-
-
